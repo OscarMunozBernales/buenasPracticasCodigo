@@ -68,3 +68,15 @@ Acá algunos tips:
 - Reduce el acoplamiento (Acoplamiento hace referencia a que, el comportamiento de una función depende enteramente de lo que retorne otra función, y esta de otra, y otra, y otra…)
 - Usa más código modular.
 - Escribe tu código como si fuera una API externa (Que se pueda importar de otro código y sirva completamente)
+
+## 3.3. Código organizado
+El código organizado se refiere a cómo tenemos distribuido nuestros archivos en la raíz (root) del proyecto. A mayor organización, mayor entendimiento del código.
+
+# 4. Escribir código libre de vicios
+
+## 4.1. Evitar el hardCoding
+El hardcoding es la práctica de escribir valores literales en lugar de identificadores. **No debe de usarse**, ya que si el día de mañana debemos cambiar los valores eso significa que debemos cambiar el código en los lugares que esté ese valor estático por completo y luego mandar a producción, cuándo podríamos hacer el cambio más orgánico en una variable que afecte a todos los lugares que es llamada.
+
+## 4.2. Evitar efectos colaterales.
+Debemos analizar muy bien nuestro código para evitar efectos colaterales y evitar que nuestro código deje de funcionar. Un consejo de nuestro profesor en esta clase: **No uses variables globales**.
+
