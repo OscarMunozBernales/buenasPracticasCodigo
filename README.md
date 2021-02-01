@@ -80,3 +80,35 @@ El hardcoding es la práctica de escribir valores literales en lugar de identifi
 ## 4.2. Evitar efectos colaterales.
 Debemos analizar muy bien nuestro código para evitar efectos colaterales y evitar que nuestro código deje de funcionar. Un consejo de nuestro profesor en esta clase: **No uses variables globales**.
 
+# 5. Conocer los principios SOLID
+## 5.1. Principios SOLID: Single Responsibility Principle
+**SOLID** son cinco principios básicos de la programación orientada a objetos que ayudan a crear software mantenible en el tiempo.
+
+SOLID significa:
+- S: Single Reponsibility Principle (Principio de responsabilidad unica)
+- O: Open/Closed Principle (Principio de abierto o cerrado)
+- L: Liskov Substitution Principle (Principio de sustitución de Liskov)
+- I: Interface Segregation Principle (Principio de segracion de interfaces)
+- D: Dependency Inversion Principle (Principio de inverción de dependencia)
+
+La S se trata de una clase que debe tener sólo una razón para cambiar.
+
+## 5.1. Single Reponsibility Principle (Principio de responsabilidad unica)
+El principio de responsabilidad única (también conocido como “la lata cohesión”) nos dice que una clase debería tener un único objetivo, muy claro, muy conciso y muy acotado.
+
+## 5.2. Open/Closed Principle (Principio de abierto o cerrado)
+Open/Closed Principle establece que una entidad de software debe quedarse abierta para su extensión, pero cerrada para su modificación.
+
+## 5.3. Liskov Substitution Principle (Principio de sustitución de Liskov)
+El Liskov Substitution Principle establece que cada clase que hereda de otra puede usarse como su padre sin necesidad de conocer las diferencias entre ellas. Para que pueda darse este principio debe cumplir con dos puntos:
+
+- El cliente debe usar métodos de la clase padre únicamente.
+- La clase hija no debe alterar el comportamiento de los métodos de la clase padre.
+
+## 5.4. Interface Segregation Principle (Principio de segracion de interfaces)
+El Interface Segregation Principle establece que los clientes de un programa sólo deberían conocer de éste los métodos que realmente usan.
+
+## 5.5. Dependency Inversion Principle (Principio de inverción de dependencia)
+Dependency Inversion Principle detalla que los módulos de alto nivel no deben depender de los de bajo nivel, ambos deben depender de abstracciones.
+Las abstracciones no deben depender de los detalles, los detalles deben depender de las abstracciones.
+
